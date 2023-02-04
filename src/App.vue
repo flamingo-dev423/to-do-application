@@ -1,20 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<h1 class="text-2xl font-semibold text-gray-900 ">My Vue to-do App</h1>
+
+  <todoApp/>
+  <router-view/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import todoApp from './components/todoapp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    todoApp
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@200;300;400;500;600&display=swap');
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
